@@ -2,5 +2,8 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-chrome-tracing'
+  name: 'ember-chrome-tracing',
+  includedCommands: function() {
+    return require('./lib/commands');
+  }
 };
